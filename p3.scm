@@ -1,5 +1,5 @@
 (load "helpers.scm")
-(load "i-3.scm")
+(load "i3.scm")
 
 (define (sub-digit x) (/ (- x (% x 10)) 10))
 

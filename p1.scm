@@ -1,5 +1,5 @@
 (load "helpers.scm")
-(load "i-1.scm")
+(load "i1.scm")
 
 ; O(7n) + O(3*n^l) - can easily be improved
 (define (sonar l n)

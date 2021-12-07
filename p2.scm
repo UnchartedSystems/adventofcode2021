@@ -1,3 +1,5 @@
+(load "i2.scm")
+
 (define (part-1 x y z l)
   (if (null? l)
       (* x y)
@@ -17,5 +19,5 @@
 (define (up n x y z f l)
   (f x (- y n) z  l))
 
-;(part-1 0 0 0 puzzle-input)
-;(part-2 0 0 0 puzzle-input)
+(part-1 0 0 0 puzzle-input)
+(part-2 0 0 0 puzzle-input)
