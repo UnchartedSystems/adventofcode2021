@@ -54,7 +54,5 @@
   (* (bl->i (recursive-prune (map:b->bl l len) b-convert len))
      (bl->i (recursive-prune (map:b->bl l len) b-invert len))))
 
-; fuck u dan
-
 (part-1 puzzle-input 12)
 (part-2 puzzle-input 12)
