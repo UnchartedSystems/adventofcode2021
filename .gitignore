@@ -2,3 +2,4 @@
 .cpcache/
 .cpcache/
 clj-kondo/
+*.lsp
