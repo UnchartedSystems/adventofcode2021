@@ -1,5 +1,7 @@
 (define (% x y) (modulo x y))
 
+(define (attach l x) (append l `(x)))
+
 ; O(d)
 (define (digit d x)
   (if (< d 2)
@@ -65,6 +67,12 @@
         (iter (- n 1) (cdr ol) (cons (car ol) nl))))
   (iter n l `()))
 
+(define (take-so lst cnt)
+  (if (zero? cnt)               ; if you ask for zero element
+      '()                       ; then return empty list
+      (cons (car lst)           ; else make a pair with first element
+            (take (cdr lst)     ; and result from take with the rest of the list
+                  (- cnt 1))))) ; with one less element than you originally asked for
 ; O(n)
 (define (skip n l)
   (if (or (< n 1) (null? (car l)))
